@@ -40,7 +40,6 @@
 }
 .nav_link:hover{
     color: orange;
-    font-size: 15px;
     transition: 250ms;
 }
 .nav_item{
