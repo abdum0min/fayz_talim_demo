@@ -35,14 +35,14 @@ function initializeCarousel(trackSelector, prevButtonSelector, nextButtonSelecto
 
 
   // nav sm
-const modal = document.querySelector('.nv-modal')
+const modal = document.querySelector('.nav-modal')
 const menu = document.querySelector('.menu')
-const x = document.querySelector('.x')
+const exit = document.querySelector('.exit')
 
 
 menu.addEventListener('click' , ()=>{
     modal.style.display = 'block'
 })
-x.addEventListener('click' , ()=>{
+exit.addEventListener('click' , ()=>{
     modal.style.display = 'none'
 })

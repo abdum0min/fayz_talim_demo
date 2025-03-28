@@ -22,7 +22,7 @@
     box-sizing: border-box;
 }
 .homepage{
-    background: url('../img/fayz-talim.jpg')no-repeat center/cover;
+    background: url('../img/fayz-talim.webp')no-repeat center/cover;
 }
 /* * */
 /* nav start */
@@ -303,7 +303,7 @@
 /* responsives */
 
 /* navbar sm  */
-.x{
+.exit{
     font-size: 35px;
     color: #000;
 }
@@ -322,7 +322,7 @@
     color: #ffffff;
     font-size: 30px;
 }
-.nv-modal{
+.nav-modal{
     backdrop-filter: blur(60px);
     box-shadow: 0px 0px 30px rgba(227,228,237,0.37);
     border: 2px solid rgba(255,255,255,0.18);
