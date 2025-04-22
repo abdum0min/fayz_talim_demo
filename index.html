@@ -5,38 +5,52 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fayz-talim</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="icon" href="./assets/main/img/fayz_talim_icon.webp" />
     <link rel="stylesheet" href="./assets/main/css/main.css" />
     <link rel="stylesheet" href="./assets/vender/css/bootstrap.min.css" />
 </head>
 
 <body>
-    <!-- nav start -->
-    <div class="nav">
-        <div class="container">
-            <div style="height: 50px" class="nav_wrapper d-flex justify-content-between align-items-center">
-                <a href="#"><img class="f_icon" src="./assets/main/img/fayz_talim_icon.webp" alt="" /></a>
-                <ul class="nav_items gap-4 m-0 ul-none">
-                    <li class="nav_item"><a class="nav_link" href="#">HOME</a></li>
-                    <li class="nav_item">
-                        <a class="nav_link" href="#about">ABOUT</a>
-                    </li>
-                    <li class="nav_item">
-                        <a class="nav_link" href="#courses">COURSES</a>
-                    </li>
-                    <li class="nav_item">
-                        <a class="nav_link" href="#teachers">TEACHERS</a>
-                    </li>
-                    <li class="nav_item">
-                        <a class="nav_link" href="#footer">CONTACT US</a>
-                    </li>
-                </ul>
-                <i class="fa-solid fa-bars menu"></i> 
-            </div>
+    <!-- Navbar -->
+<nav class="navbar nav navbar-expand-lg"  data-bs-theme="dark">
+    <div class="container">
+      <a class="navbar-brand" href="#"><img class="f_icon" src="./assets/main/img/fayz_talim_icon.webp" alt="" /></a>
+  
+      <!-- Offcanvas Toggler -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <!-- Offcanvas Menu -->
+      <div class="offcanvas offcanvas-end " tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div style="background-color: #370BFF;" class="offcanvas-header">
+          <h5 class="offcanvas-title nav_title" id="offcanvasNavbarLabel">FAYZ TALIM</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
+        <div class="offcanvas-body offcanvas_nav">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link nav_link active" aria-current="page" href="#">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav_link" href="#about">ABOUT</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link nav_link "  href="#courses">COURSES</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav_link" href="#teachers">TEACHERS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav_link" href="#footer">CONTACT US</a>
+              </li>
+          </ul>
+        </div>
+      </div>
     </div>
-    <!-- nav end -->
+  </nav>
+
     <!-- homepage start -->
     <div class="homepage">
         <!-- header start -->
@@ -424,23 +438,7 @@
         </div>
     </div>
     <!-- footer end -->
-    <!-- nav sm start -->
-    <div class="nav-modal fad ">
-        <div class="container_90">
-            <div class="container">
-                <div class="ix d-flex  justify-content-end py-2 "><i class="fa-solid fa-xmark exit"></i></div>
-                <ul class=" list-unstyled m-0  gap-4 d-flex d-flex flex-column py-5 ">
-                    <li class="nav_item nav_sm_item"><a class="nav_link nav_sm_link" href="#">HOME</a></li>
-                    <li class="nav_item nav_sm_item"><a class="nav_link nav_sm_link" href="#about">ABOUT</a></li>
-                    <li class="nav_item nav_sm_item"><a class="nav_link nav_sm_link" href="#courses">COURSES</a></li>
-                    <li class="nav_item nav_sm_item"><a class="nav_link nav_sm_link" href="#teachers">TEACHERS</a></li>
-                    <li class="nav_item nav_sm_item"><a class="nav_link nav_sm_link" href="#footer">CONTACT US</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <!-- nav sm end -->
-
+    
     <script src="./assets/main/js/main.js"></script>
     <script src="./assets/vender/js/bootstrap.bundle.min.js"></script>
 </body>

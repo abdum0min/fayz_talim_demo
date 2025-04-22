@@ -1,5 +1,4 @@
 /* fonts start */
-
 @font-face {
     font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
     font-family: 'Inter';
@@ -21,6 +20,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 .homepage{
     background: url('../img/fayz-talim.webp')no-repeat center/cover;
 }
@@ -29,35 +29,35 @@
 
 .f_icon{
     width: 50px;
-    height: auto;
+    height: 40px;
 }
 .nav_link{
     text-decoration: none;
-    color: #fff;
-    font-size: 14px;
+    color: #fff !important;
+    font-size: 14px !important;
     font-family: 'Inter';
     font-weight: 400;
 }
 .nav_link:hover{
-    color: orange;
+    color: orange !important;
     transition: 250ms;
 }
-.nav_item{
-    list-style: none;
+
+.nav_title{
+    font-family: 'Inter';
+    font-weight: 400;
+    color: #fff;
 }
-.nav_items{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
+
 .nav{
-    position: sticky;
+    position: sticky !important;
     top: 0;
-    /* backdrop-filter: blur(40px); */
     background: #370BFF;
-    box-shadow: 0px 0px 30px rgba(227,228,237,0.37);
-    border: 2px solid rgba(255,255,255,0.18);
     z-index: 100;
+}
+
+.offcanvas_nav{
+    background: #370BFF;
 }
 /* nav end */
 /* header start */
@@ -136,7 +136,6 @@
     max-width: 800px;
     overflow: hidden;
     border-radius: 10px;
-    /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); */
   }
 
   .carousel_track ,  .carousel_track_t {
@@ -195,7 +194,6 @@
     }
   }
 /* advantage end */
-
 /* courses start */
 .check_box{
     width: 20px;
@@ -246,13 +244,6 @@
     font-weight: 700;
 }
 /* courses end */
-
-/* teachers start */
-.carousell_t{
-    max-width: 1000px;
-}
-/* teachers end */
-
 /* footer start */
 .footer_icon{
     width: 150px;
@@ -283,8 +274,6 @@
     height: auto;
 }
 /* footer end */
-
-
 /* responsives */
 @media screen and (max-width:900px) {
     .header_h1{
@@ -301,59 +290,3 @@
     }
 }
 /* responsives */
-
-/* navbar sm  */
-.exit{
-    font-size: 35px;
-    color: #000;
-}
-.container_90{
-    width: 90%;
-    margin: auto;
-}
-.nav_sm_link{
-    color: #000;
-}
-.nav_sm_item{
-    border-bottom: 2px solid  #086CF9;
-}
-.menu{
-    display: none;
-    color: #ffffff;
-    font-size: 30px;
-}
-.nav-modal{
-    backdrop-filter: blur(60px);
-    box-shadow: 0px 0px 30px rgba(227,228,237,0.37);
-    border: 2px solid rgba(255,255,255,0.18);
-    left: 50%;
-    z-index: 300;
-    top: 0px;
-    display: none;
-    position: fixed;
-    width: 50vw;
-    height: 100vh;
-}
-.fad{
-    animation: fad 1s;
-}
-@keyframes fad {
-    0%{
-      opacity: 0;
-    }
-    100%{
-      opacity: 1;
-    }
-}
-@media screen and (max-width:700px) {
-    .btn-none{
-      display: none;
-    }
-    .ul-none{
-      display: none !important;
-    }
-    .menu{
-      display: block;
-    }
-}
-/* navbar sm */
