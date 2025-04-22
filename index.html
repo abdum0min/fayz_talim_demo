@@ -26,9 +26,9 @@
       </button>
   
       <!-- Offcanvas Menu -->
-      <div class="offcanvas offcanvas-end " tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas max_offcanvas offcanvas-end " tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
         <div style="background-color: #370BFF;" class="offcanvas-header">
-          <h5 class="offcanvas-title nav_title" id="offcanvasNavbarLabel">FAYZ-TALIM</h5>
+          <h5 aria-label="Close" data-bs-dismiss="offcanvas" class="offcanvas-title nav_title" id="offcanvasNavbarLabel"><a href="#">FAYZ-TALIM</a></h5>
           <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body offcanvas_nav">
@@ -64,7 +64,7 @@
                     It is a long established fact that a reader will be distracted by
                     the readable content of a page 
                 </p>
-                <a class="learn_btn" href="#">LEARN MORE</a>
+                <a data-modal class="learn_btn" href="#">CONTACT US</a>
             </div>
         </div>
         <!-- header end -->
@@ -441,6 +441,23 @@
         </div>
     </div>
     <!-- footer end -->
+
+    <!-- Modal -->
+    <div class="modal">
+        <div class="modal__dialog">
+        <div class="modal__content">
+            <form action="#">
+            <div data-modal-close class="modal__close">&times;</div>
+            <div class="modal__title">
+                Contact Us!
+            </div>
+            <input required placeholder="Full Name" name="name" type="text" class="modal__input" />
+            <input required placeholder="+998901234567" pattern="^\+998\d{9}$" name="phone" type="tel" class="modal__input" />
+            <button type="submit" class="btn btn-third modal_btn">Contact Us</button>
+            </form>
+        </div>
+        </div>
+    </div>
     
     <script src="./assets/main/js/main.js"></script>
     <script src="./assets/vender/js/bootstrap.bundle.min.js"></script>
