@@ -415,11 +415,17 @@
     .text{
         width: 90% !important;
     }
-}
-
-@media screen and (max-width:900px) {
     .main{
         margin-top: 20px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .modal__content {
+        width: 100% !important;
+    }
+    .modal__dialog{
+        width: 90%;
     }
 }
 /* responsives */
